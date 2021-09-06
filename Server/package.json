@@ -2,7 +2,6 @@
   "name": "Server",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://Priyadharshini864.github.io/Help-Gears",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
