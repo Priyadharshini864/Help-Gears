@@ -3,9 +3,12 @@ const app = express()
 const stripe = require("stripe")('sk_test_51JOcaoSJc7FCuHyuFhpWyBDs4LhiE8WCtgsJb3BafocOwKK7mWiedzwJEfxjXy86OPy3kSpdvQ8kroNjGwNAUFQ30021Sbiy8x')
 const bodyParser = require("body-parser")
 const cors = require("cors")
+const axios=require('axios')
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
+const buildPath = path.join(__dirname, '..', 'build');
+app.use(express.static(buildPath));
 
 app.use(cors())
 
